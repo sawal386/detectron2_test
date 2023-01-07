@@ -9,7 +9,7 @@
 #!/bin/bash
 
 python main_train.py \
-    --model_path "COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml" \
+    --model_path "COCO-Detection/faster_rcnn_R_101_FPN_3x.yaml" \
     --train_data_catalog_name "balloon_train" \
     --test_data_name "balloon_val" \
     --batch_size 128 \

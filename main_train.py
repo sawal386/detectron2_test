@@ -32,7 +32,7 @@ def parse_arguments():
 if __name__ == "__main__":
 
     args = parse_arguments()
-    model = BaseModel(args.model_path, "mps")
+    model = BaseModel(args.model_path, "cpu")
 
     preparer = DatasetPreparer(args.raw_data_loc, args.dataset_name,
                                    args.dataset_type, args.annotation_info)
